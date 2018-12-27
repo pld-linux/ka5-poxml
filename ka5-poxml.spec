@@ -1,21 +1,27 @@
-%define		kdeappsver	18.04.0
-%define		qtver		5.3.2
+%define		kdeappsver	18.12.0
+%define		qtver		5.9.0
 %define		kaname		poxml
 
 Summary:	poxml
 Name:		ka5-%{kaname}
-Version:	18.04.0
+Version:	18.12.0
 Release:	1
 License:	GPL
 Group:		X11/Applications/Editors
 Source0:	http://download.kde.org/stable/applications/%{kdeappsver}/src/%{kaname}-%{version}.tar.xz
-# Source0-md5:	9972c014e2f99c901b7a9c6bce5633c8
+# Source0-md5:	5beead3cae77d7ec5f8c71fe795af270
 URL:		http://www.kde.org/
+BuildRequires:	Qt5Core-devel
+BuildRequires:	Qt5Xml-devel
+BuildRequires:	gettext-devel
+BuildRequires:	kf5-extra-cmake-modules >= 5.53.0
+BuildRequires:	kf5-kdoctools-devel
+BuildRequires:	qt5-build >= %{qtver}
 BuildRequires:	shared-mime-info
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-poxml.
+Translates DocBook XML files using gettext po files.
 
 %prep
 %setup -q -n %{kaname}-%{version}
