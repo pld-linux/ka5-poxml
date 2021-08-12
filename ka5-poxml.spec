@@ -24,6 +24,9 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 Translates DocBook XML files using gettext po files.
 
+%description -l pl.UTF-8
+poxml tłumaczy pliki DocBook XML korzystając z plików .po gettexta.
+
 %prep
 %setup -q -n %{kaname}-%{version}
 
