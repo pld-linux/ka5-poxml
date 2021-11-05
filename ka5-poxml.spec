@@ -1,15 +1,15 @@
-%define		kdeappsver	21.08.2
+%define		kdeappsver	21.08.3
 %define		kframever	5.56.0
 %define		qtver		5.9.0
 %define		kaname		poxml
 Summary:	poxml
 Name:		ka5-%{kaname}
-Version:	21.08.2
+Version:	21.08.3
 Release:	1
 License:	GPL
 Group:		X11/Applications/Editors
 Source0:	http://download.kde.org/stable/release-service/%{kdeappsver}/src/%{kaname}-%{version}.tar.xz
-# Source0-md5:	627774277fd8252a387500aeb06f1b2f
+# Source0-md5:	9c23ff023accbbe2c4d42e02c5ce32b8
 URL:		http://www.kde.org/
 BuildRequires:	Qt5Core-devel
 BuildRequires:	Qt5Xml-devel
