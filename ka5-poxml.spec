@@ -1,18 +1,18 @@
 #
 # Conditional build:
 %bcond_with	tests		# build with tests
-%define		kdeappsver	22.12.3
+%define		kdeappsver	23.04.0
 %define		kframever	5.94.0
 %define		qtver		5.15.2
 %define		kaname		poxml
 Summary:	poxml
 Name:		ka5-%{kaname}
-Version:	22.12.3
-Release:	2
+Version:	23.04.0
+Release:	1
 License:	GPL
 Group:		X11/Applications/Editors
 Source0:	https://download.kde.org/stable/release-service/%{kdeappsver}/src/%{kaname}-%{version}.tar.xz
-# Source0-md5:	bf5d6bd153a38dec4b567aea5e216e4c
+# Source0-md5:	4f157cb68f222834734984a31370686c
 URL:		http://www.kde.org/
 BuildRequires:	Qt5Core-devel
 BuildRequires:	Qt5Xml-devel
